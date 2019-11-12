@@ -1,4 +1,20 @@
 {
-    "inputs": {}, 
+    "inputs": {
+        "balance-small": {
+            "content_id": "a722d79847cfcfdd9c1a83ea3575365a5a71ad2578314ff4eace31ca63e7bad7dd46113f94e54265891e17c4a761944ac8d352450aa4264112979f472a26a874", 
+            "freeze_time": "20190409T143119376501+0200", 
+            "kind": "3b4f91e1a9e9ff81a503c356c4f0852b-4e910fd3-56eb-4efa-9227-a4d8567e4948"
+        }, 
+        "foreign-manager": {
+            "content_id": "2c4e0bdc030190d9e4af19e7e0bf6949d2b9b607cf3c35a0ae670f241ddef5de054a07db1a7cd44dda8786494a4aa86d4e4c22facc03e6602973f35a847330d9", 
+            "freeze_time": "20191112T214903046656+0100", 
+            "kind": "ca1dae4b17683e2103da9dd607e70c48-92662dd4-3320-45c3-9b22-a6b3d65aca85"
+        }, 
+        "import-dummies": {
+            "content_id": "f06d2cbb1a82d9b6f4d50d2e620ea2639d8bfa7f1de7a962fb8718254d3fee2773e3b1aee53963abbd9941bcc16f1cba770b6d5c0da36ce66401263e7cf30c4a", 
+            "freeze_time": "20190424T172307619588+0200", 
+            "kind": "56696fbdc7c1e3762de645fa12b69195-7ced8dc6-cdcf-478d-a953-9aef9bfbf6aa"
+        }
+    }, 
     "kind": "bd68f97630ffd7f83ce4db58deb3024c-de0fb847-beb2-446f-a9a0-7e7418304d71"
 }

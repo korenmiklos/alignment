@@ -1,0 +1,24 @@
+% presentation.tex
+
+= Stylized Facts =
+== 1. Global exposure differs across firms, even conditional on size ==
+== 2. Measures of global exposure are correlated ==
+== 3. Firms in new markets grow slowly ==
+== 4. Managers earn high wages, especially at large firms ==
+
+= Model =
+== Key ingredients ==
+1. Diminishing returns 
+2. Complementarity
+3. Matching 
+= Cross sectional predictions =
+== Cross sectional predictions ==
+Use jointly normal?
+
+= Comparative statics =
+= Measurement =
+== Identification ==
+1. Supply shocks
+2. Many dimensions
+3.   Instrument export returns by domestic demand shocks
+

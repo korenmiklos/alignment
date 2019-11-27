@@ -4,6 +4,8 @@ local outcome exporter
 local global_exposure foreign_owner capimport matimport expat
 local size_controls lnL lnR
 
+regress `outcome' `global_exposure' `size_controls', robust
+
 drop *1
 foreach X in `global_exposure' {
 	regress `outcome' `X'

@@ -1,9 +1,29 @@
 % presentation.tex
 
-= Stylized Facts =
+= Four facts =
 == 1. Global exposure differs across firms, even conditional on size ==
+1. Export shares vary widely, mostly independently of size. (next slide, Kee and Krishna 2008)
+2. Size is a minor determinant of becoming an exporter. (Armenter and Koren 2015: pseudo-$R^2=0.05$)
+3. Size is a minor determinant of importing intermediate inputs. (Halpern, Koren and Szeidl 2015)
+
+== ==
+\longfigure{export_share}{Export shares vary widely, mostly independently of size\\ (Hungary, manufacturing, 2003)}
+\longfigure{export_share_by_owner}{Variation not fully explained by foreign ownership\\ (Hungary, manufacturing, 2003)}
+
 == 2. Measures of global exposure are correlated ==
+1. Firms with ''anything'' foreign are more likely to export (next slide)
+2. Foreign ''owned'' firms import more intermediate inputs (Halpern, Koren and Szeidl 2015) and machines (Halpern, Hornok, Koren and Szeidl 2019)
+3. Exports and capital imports increase after foreign ''manager'' takes over firm (Koren and Telegdy 2019)
+
+== ==
+\longfigure{global_engagement_slope}{Firms with anything foreign are more likely to export\\ (Hungary, manufacturing, 2003)}
+
 == 3. Firms in new markets grow slowly ==
+
+== ==
+\longfigure{ruhl-willis-2017}{New exporters \\ (Ruhl and Willis 2017)}
+
+
 == 4. Managers earn high wages, especially at large firms ==
 
 = Model =

@@ -5,6 +5,11 @@
             "freeze_time": "20190409T143119376501+0200", 
             "kind": "3b4f91e1a9e9ff81a503c356c4f0852b-4e910fd3-56eb-4efa-9227-a4d8567e4948"
         }, 
+        "ceo-panel": {
+            "content_id": "8dfcaaac791d3923217b07dd6587ea0707d7c7393a326469d7d3a822255dce39839c90e055bafe74d4b36723d1f4dc85bc38a7af99f4bd0942374e439621a05a", 
+            "freeze_time": "20181213T152849301808+0100", 
+            "kind": "78f8fb4a1413fee962873c81330cf8df-5770812e-383a-4dd5-9812-3f0c24bf1043"
+        }, 
         "foreign-manager": {
             "content_id": "2c4e0bdc030190d9e4af19e7e0bf6949d2b9b607cf3c35a0ae670f241ddef5de054a07db1a7cd44dda8786494a4aa86d4e4c22facc03e6602973f35a847330d9", 
             "freeze_time": "20191112T214903046656+0100", 

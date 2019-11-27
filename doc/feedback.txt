@@ -1,0 +1,4 @@
+- Why would capital be specific to markets? Use market-specific trade costs instead? (Sergey and Gabor)
+- Export entry and exit are correlated with manager turnover. (Adam)
+- Can GVCs fully explain fact 2? (Istvan)
+- Measure observable manager skills. (Adam)

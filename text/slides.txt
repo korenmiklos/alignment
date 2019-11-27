@@ -11,26 +11,83 @@
 \longfigure{export_share_by_owner}{Variation not fully explained by foreign ownership\\ (Hungary, manufacturing, 2003)}
 
 == 2. Measures of global exposure are correlated ==
-1. Firms with ''anything'' foreign are more likely to export (next slide)
+1. Firms with ''anything'' foreign are more likely to export (next slide, Bernard, Jensen and Schott 2009)
 2. Foreign ''owned'' firms import more intermediate inputs (Halpern, Koren and Szeidl 2015) and machines (Halpern, Hornok, Koren and Szeidl 2019)
 3. Exports and capital imports increase after foreign ''manager'' takes over firm (Koren and Telegdy 2019)
 
 == ==
 \longfigure{global_engagement_slope}{Firms with anything foreign are more likely to export\\ (Hungary, manufacturing, 2003)}
 
-== 3. Firms in new markets grow slowly ==
+== 3. Firms enter new markets small ==
+1. New exporters grow gradually (next slide from Ruhl and Willis 2017)
+2. Young firms grow gradually (Arkolakis, Papageorgiou and Timoshenko 2018)
 
 == ==
-\longfigure{ruhl-willis-2017}{New exporters \\ (Ruhl and Willis 2017)}
+\longfigure{ruhl-willis-2017}{New exporters grow gradually \\ (Ruhl and Willis 2017)}
 
 
 == 4. Managers earn high wages, especially at large firms ==
+1. CEOs earn ''high'' wages, especially at large firms (next slide from Frydman and Saks 2010)
+2. Managers with special experience earn more (Bertrand and Schoar 2003, Mion and Opromolla 2014)
+
+== ==
+\longfigure{frydman-saks-2010}{CEOs earn ''high'' wages, especially at large firms\\ (Frydman and Saks 2010)}
+
 
 = Model =
+
+== Production function ==
+Firm $j$, market $i$
+\[
+Q_{ij}=A_j K_{ij}^\alpha L_{ij}^{1-\alpha}\text{ with } i=H,F
+\]
+...
+in contrast to
+\[
+\sum_iQ_{ij} = A_jK_j^\alpha L_j^{1-\alpha}
+\]
+...
+Firm characterized by $(A_j, K_{Hj}, K_{Fj})$
+
+== Market access skills ==
+Manager $m$, market $i$
+\[
+\kappa_{im}p_i \text{ with }\kappa_{im} \in (0,1)
+\]
+...
+Manager characterized by $(\kappa_{Hm}, \kappa_{Fm})$
+
+== Net revenue per market ==
+\[
+\kappa_{im}p_i A_j K_{ij}^{\alpha} L_{ij}^{1-\alpha} - w L_{ij}
+\]
+Labor frictionlessly hired,
+\[
+R_{ijm} =  {(\kappa_{im}p_i)^{1/\alpha}\strut} {\left(\frac {1-\alpha} {w}\right)^{1/\alpha-1} A_j^{1/\alpha} K_{ij}\strut}
+\]
+...
+\[
+R_{ijm} = \tilde \kappa_{im} \tilde K_{ij}
+\]
+
+== Assignment ==
+Firms hire managers in frictionless, competitive markets. Optimal manager maximizes net revenue minus her wage,
+\[
+\max_m \alpha\sum_i R_{ijm} - \nu_m =  \max_m \alpha\sum_i \tilde\kappa_{im}\tilde K_{ij} - \nu_m,
+\]
+
+== Equilibrium ==
+Given fixed distributions $\{(A_j, K_{Hj}, K_{Fj})\}_{j}$, $\{(\kappa_{Hm}, \kappa_{Fm})\}_{m}$ (with $\#j = \#m$), determine
+- firm-manager assignment: $\mu(i,m)$
+- manager wages: $\nu_m$
+- firm profits: $\pi_j$
+
 == Key ingredients ==
-1. Diminishing returns 
-2. Complementarity
-3. Matching 
+1. Diminishing returns within each market
+2. Inelastic supply of manager skills
+3. Complementarity of manager skills with firm capital
+
+
 = Cross sectional predictions =
 == Cross sectional predictions ==
 Use jointly normal?

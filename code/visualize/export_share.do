@@ -8,7 +8,7 @@ replace export_share = export_share + 2 * (uniform() - 0.5)
 tw (scatter export_share lnR, msize(tiny)),  scheme(538w) ///
 	ytitle(Share of exports in revenue)
 
-graph export ../output/figure/export_share.pdf, replace
+graph export "output/figure/export_share.pdf", replace
 
 
 tw (scatter export_share lnR if foreign_owner == 0, msize(tiny)) ///
@@ -17,4 +17,4 @@ tw (scatter export_share lnR if foreign_owner == 0, msize(tiny)) ///
 	ytitle(Share of exports in revenue) ///
 	legend(order(1 "Domestic owned" 2 "Foreign owned"))
 
-graph export ../output/figure/export_share_by_owner.pdf, replace
+graph export "output/figure/export_share_by_owner.pdf", replace

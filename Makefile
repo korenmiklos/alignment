@@ -9,6 +9,8 @@ output/figure/global_engagement_slope.pdf: code/visualize/slope.do temp/firm-pan
 	cat $< >> temp1.do
 	stata -b do temp1.do
 	rm temp1.do
+temp/experience-dummies.dta: code/clean/experience_dummies.do temp/balance.dta temp/import-dummies.dta code/analyze/define_variables.do input/ceo-panel/ceo-panel.dta
+	stata -b do $<
 temp/firm-panel.dta: code/clean/merge.do temp/balance.dta temp/import-dummies.dta temp/expat.dta
 	stata -b do $<
 temp/balance.dta: code/clean/filter_balance.do input/merleg-expat/balance-small.dta

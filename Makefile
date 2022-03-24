@@ -11,9 +11,9 @@ output/figure/global_engagement_slope.pdf: code/visualize/slope.do temp/firm-pan
 	rm temp1.do
 temp/firm-panel.dta: code/clean/merge.do temp/balance.dta temp/import-dummies.dta temp/expat.dta
 	stata -b do $<
-temp/balance.dta: code/clean/filter_balance.do input/balance-small/balance-small.dta
+temp/balance.dta: code/clean/filter_balance.do input/merleg-expat/balance-small.dta
 	stata -b do $<
-temp/expat.dta: code/clean/filter_ceo_panel.do input/ceo-panel/ceo_panel.dta
+temp/expat.dta: code/clean/filter_ceo_panel.do input/ceo-panel/ceo-panel.dta
 	stata -b do $<
 temp/import-dummies.dta: code/clean/filter_import_dummies.do input/import-dummies/import-dummies.dta
 	stata -b do $<

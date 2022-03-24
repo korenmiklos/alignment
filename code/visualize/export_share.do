@@ -1,5 +1,5 @@
 keep if year == 2003
-keep if teaor == "D"
+keep if teaor08_1d == "C"
 replace export_share = 100 * export_share
 
 * shake so that overlapping dots are visible

@@ -17,3 +17,5 @@ temp/expat.dta: code/clean/filter_ceo_panel.do input/ceo-panel/ceo_panel.dta
 	stata -b do $<
 temp/import-dummies.dta: code/clean/filter_import_dummies.do input/import-dummies/import-dummies.dta
 	stata -b do $<
+install:
+	stata -b ssc install g538schemes

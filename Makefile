@@ -19,3 +19,7 @@ temp/import-dummies.dta: code/clean/filter_import_dummies.do input/import-dummie
 	stata -b do $<
 install:
 	stata -b ssc install g538schemes
+init:
+	mkdir -p temp
+	mkdir -p input
+	bead input load

@@ -1,9 +1,9 @@
 generate lnL = ln(emp)
 generate lnR = ln(sales)
-generate byte exporter = export>0 if !missing(export)
 generate byte foreign_owner = fo3
 
-mvencode foreign_owner, mv(0) override
+mvencode foreign_owner export, mv(0) override
+generate byte exporter = export>0
 
 xtset frame_id_numeric year
 egen first_year_expat = min(cond(expat==1,year,.)), by(frame_id_numeric )

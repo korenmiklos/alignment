@@ -1,4 +1,6 @@
-all: output/figure/export_share.pdf output/figure/export_share_by_owner.pdf output/figure/global_engagement_slope.pdf
+all: output/figure/sorting_by_size.pdf output/figure/export_share.pdf output/figure/export_share_by_owner.pdf output/figure/global_engagement_slope.pdf
+output/figure/sorting_by_size.pdf: code/analyze/sorting.do temp/firm-panel.dta code/analyze/define_variables.do
+	stata -b do $<
 output/figure/export_share.pdf output/figure/export_share_by_owner.pdf&: code/visualize/export_share.do temp/firm-panel.dta
 	echo "use temp/firm-panel.dta, clear\ndo code/analyze/define_variables.do" > temp.do
 	cat $< >> temp.do
@@ -19,6 +21,7 @@ temp/import-dummies.dta: code/clean/filter_import_dummies.do input/import-dummie
 	stata -b do $<
 install:
 	stata -b ssc install g538schemes
+	stata -b ssc install reghdfe
 init:
 	mkdir -p temp
 	mkdir -p input

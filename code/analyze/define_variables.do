@@ -6,8 +6,13 @@ mvencode foreign_owner export, mv(0) override
 generate byte exporter = export>0
 
 xtset frame_id_numeric year
-egen first_year_expat = min(cond(expat==1,year,.)), by(frame_id_numeric )
+egen first_year_expat = min(cond(expat==1, year, .)), by(frame_id_numeric )
+egen last_year_expat = max(cond(expat==1, year, .)), by(frame_id_numeric )
+egen first_year_local = min(cond(expat==0, year, .)), by(frame_id_numeric )
+
 egen first_year_firm = min(year), by(frame_id_numeric )
+egen last_year_firm = max(year), by(frame_id_numeric )
+
 generate byte enter_expat = (expat==1) & (L.expat==0) if !missing(expat,L.expat)
 generate byte exit_expat = (expat==0) & (L.expat==1) if !missing(expat,L.expat)
 

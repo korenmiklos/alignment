@@ -15,6 +15,8 @@ temp/firm-panel.dta: code/clean/merge.do temp/balance.dta temp/import-dummies.dt
 	stata -b do $<
 temp/balance.dta: code/clean/filter_balance.do input/merleg-expat/balance-small.dta
 	stata -b do $<
+temp/assignment.dta: code/clean/assignment.do input/ceo-panel/ceo-panel.dta
+	stata -b do $<
 temp/expat.dta: code/clean/filter_ceo_panel.do input/ceo-panel/ceo-panel.dta
 	stata -b do $<
 temp/import-dummies.dta: code/clean/filter_import_dummies.do input/import-dummies/import-dummies.dta

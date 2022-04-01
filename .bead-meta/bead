@@ -1,5 +1,10 @@
 {
     "inputs": {
+        "bertarifa": {
+            "content_id": "885cae8804a42f55388f884be1e2f081f48202483c6dba11499dc587ef66f6936d08b51ca4e669edf4e520448ac9927ad75dab3c6092d1598d39c3842821e9a3", 
+            "freeze_time": "20200523T170848284296+0200", 
+            "kind": "ab29f0142708046070c3d06a99954380-240f03ad-fd00-4e1d-8304-0e6114cdbd5a"
+        }, 
         "ceo-panel": {
             "content_id": "cee8d9d600d088191cbf656b6c09a652adfb95cacf5169a491cbb69c7cad1a399bc34dfc44c28493c5bfb7c73c31306e5c3124d000a8820dddff503bf3d865ae", 
             "freeze_time": "20220217T215922134448+0100", 

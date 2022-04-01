@@ -20,6 +20,7 @@ generate byte exit_expat = (expat==0) & (L.expat==1) if !missing(expat,L.expat)
 generate export_share = export/sales
 drop if export_share > 1
 generate lnX = ln(export)
+generate ln_domestic_sales = ln(sales - export)
 
 label variable lnL "Employment (log)"
 label variable lnR "Sales (log)"

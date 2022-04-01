@@ -61,7 +61,12 @@ foreach year in 1992 1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003 2004
 compress
 
 * compute average CEO wage
-keep if feor==1311
-collapse (mean) ker, by(originalid year)
+generate byte ceo = (feor==1311)
+keep if ceo | (felsof & int(feor/1000)==2)
+collapse (mean) ker, by(originalid year ceo)
+reshape wide ker, i(originalid year) j(ceo)
+
+rename ker0 college_wage
+rename ker1 ceo_wage
  
 save "temp/ceo_wage.dta", replace

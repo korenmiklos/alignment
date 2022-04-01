@@ -1,4 +1,6 @@
-all: output/figure/sorting_by_size.pdf output/figure/export_share.pdf output/figure/export_share_by_owner.pdf output/figure/global_engagement_slope.pdf
+all: output/figure/exporter_wage_premium.pdf output/figure/sorting_by_size.pdf output/figure/export_share.pdf output/figure/export_share_by_owner.pdf output/figure/global_engagement_slope.pdf
+output/figure/exporter_wage_premium.pdf: code/analyze/wages.do temp/firm-panel.dta code/analyze/define_variables.do
+	stata -b do $<
 output/figure/sorting_by_size.pdf: code/analyze/sorting.do temp/firm-panel.dta code/analyze/define_variables.do
 	stata -b do $<
 output/figure/export_share.pdf output/figure/export_share_by_owner.pdf&: code/visualize/export_share.do temp/firm-panel.dta

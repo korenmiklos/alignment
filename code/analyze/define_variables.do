@@ -1,5 +1,6 @@
 generate lnL = ln(emp)
 generate lnR = ln(sales)
+generate ln_ceo_wage = ln(ker)
 generate byte foreign_owner = fo3
 
 mvencode foreign_owner export, mv(0) override

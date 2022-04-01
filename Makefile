@@ -13,7 +13,7 @@ output/figure/global_engagement_slope.pdf: code/visualize/slope.do temp/firm-pan
 	cat $< >> temp1.do
 	stata -b do temp1.do
 	rm temp1.do
-temp/firm-panel.dta: code/clean/merge.do temp/balance.dta temp/import-dummies.dta temp/expat.dta
+temp/firm-panel.dta: code/clean/merge.do temp/balance.dta temp/import-dummies.dta temp/expat.dta temp/ceo_wage.dta
 	stata -b do $<
 temp/balance.dta: code/clean/filter_balance.do input/merleg-expat/balance-small.dta
 	stata -b do $<

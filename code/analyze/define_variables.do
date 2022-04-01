@@ -14,12 +14,15 @@ egen first_year_local = min(cond(expat==0, year, .)), by(frame_id_numeric )
 egen first_year_firm = min(year), by(frame_id_numeric )
 egen last_year_firm = max(year), by(frame_id_numeric )
 
-generate byte enter_expat = (expat==1) & (L.expat==0) if !missing(expat,L.expat)
-generate byte exit_expat = (expat==0) & (L.expat==1) if !missing(expat,L.expat)
+foreach X in expat exporter {
+    generate byte enter_`X' = (`X'==1) & (L.`X'==0) if !missing(`X',L.`X')
+    generate byte exit_`X' = (`X'==0) & (L.`X'==1) if !missing(`X',L.`X')
+}
 
 generate export_share = export/sales
 drop if export_share > 1
 generate lnX = ln(export)
+generate ln_domestic_sales = ln(sales - export)
 
 label variable lnL "Employment (log)"
 label variable lnR "Sales (log)"

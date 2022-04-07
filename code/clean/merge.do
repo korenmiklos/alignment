@@ -2,7 +2,7 @@ clear all
 
 use "temp/balance.dta"
 merge 1:1 frame_id_numeric year using "temp/import-dummies.dta", nogen keep(match master)
-merge 1:1 frame_id_numeric year using "temp/expat.dta", nogen keep(match master)
+merge 1:1 frame_id_numeric year using "temp/experience-dummies.dta", nogen keep(match master)
 
 * keep only manufacturing
 keep if teaor08_1d=="C"
